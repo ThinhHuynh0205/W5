@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="#00000000"
+        android:text="Skip"
+        android:textColor="@color/buttontext"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ImageBoard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/pic_onboarding_1" />
+
+    <TextView
+        android:id="@+id/textboard1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/heading_one"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/desc"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageNext1"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/icon_background"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_next" />
+
+
+</LinearLayout>

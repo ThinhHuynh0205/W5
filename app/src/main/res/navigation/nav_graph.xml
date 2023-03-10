@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.android.w5.splash.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_onboard1Fragment2"
+            app:destination="@id/onboard1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboard2Fragment"
+        android:name="com.android.w5.onboarding.Onboard2Fragment"
+        android:label="Onboard2Fragment" >
+        <action
+            android:id="@+id/action_onboard2Fragment_to_onboard3Fragment"
+            app:destination="@id/onboard3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboard3Fragment"
+        android:name="com.android.w5.onboarding.Onboard3Fragment"
+        android:label="Onboard3Fragment" >
+        <action
+            android:id="@+id/action_onboard3Fragment_to_welcom"
+            app:destination="@id/welcom" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcom"
+        android:name="com.android.w5.Welcom"
+        android:label="fragment_welcom"
+        tools:layout="@layout/fragment_welcom" >
+        <action
+            android:id="@+id/action_welcom_to_signup2"
+            app:destination="@id/signup2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboard1Fragment2"
+        android:name="com.android.w5.onboarding.Onboard1Fragment"
+        android:label="Onboard1Fragment" >
+        <action
+            android:id="@+id/action_onboard1Fragment2_to_onboard2Fragment"
+            app:destination="@id/onboard2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup2"
+        android:name="com.android.w5.Signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
+</navigation>

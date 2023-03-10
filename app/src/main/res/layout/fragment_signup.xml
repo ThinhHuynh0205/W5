@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/full_name"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/background_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/e_mail"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/background_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:ignore="RtlSymmetry,TextFields" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/password"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/background_text"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+</LinearLayout>
